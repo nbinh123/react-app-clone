@@ -1,0 +1,167 @@
+.container {
+    display: flex;
+    justify-content: center;
+
+    border: 1px solid black;
+    margin: 30px;
+    min-height: 100vh;
+
+    .info {
+        flex: 1;
+        border: 1px solid green;
+        padding-top: 30px;
+
+        .members {
+            position: relative;
+
+            .icon {
+                position: absolute;
+                right: 15%;
+                top: 1.8px;
+            }
+
+            .memberTag {
+                margin: 0 10px;
+                margin-top: 10px;
+                cursor: pointer;
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+                border-radius: 5px;
+
+                span {
+                    margin-left: 5px !important;
+                    color: coral;
+                    opacity: 0.6;
+                }
+
+                p {
+                    padding: 15px 50px;
+                    display: block;
+                }
+
+                // &:hover {
+                //     animation: hov 0.3s 1 linear forwards;
+                // }
+            }
+        }
+    }
+
+    .chatForm {
+        flex: 3;
+        border: 1px solid green;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .pickName {
+            p {
+                font-size: 19px;
+            }
+
+            input {
+                padding: 8px;
+                margin: 8px;
+                outline: none !important;
+                border: 0.5px solid slateblue;
+                border-radius: 5px;
+            }
+
+            button {
+                padding: 8px;
+                background: transparent;
+                border: 0.5px solid slateblue;
+                border-radius: 5px;
+            }
+        }
+
+        .form {
+            width: 100%;
+            height: 100%;
+
+            .board {
+                width: 100%;
+                height: 92%;
+                background-color: white;
+                .message{
+                    margin: 5px ;
+                    display: flex;
+                    justify-content: left;
+                    text-align: left;
+                    small{
+                        padding-left: 8px;
+                    }
+                    p{
+                        background: linear-gradient(210deg, #fbd8ea, #f188a9);
+                        border-radius: 13px;
+                        padding: 10px;
+                    }
+                }
+            }
+
+            .tool {
+                height: 8%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                input {
+                    flex: 1;
+                    height: 100%;
+                    outline: none;
+                    padding: 10px;
+                    border-radius: 5px;
+                    border: 0.5px solid gray;
+                    background-color: rgb(246 247 249);
+                    font-size: 18px;
+                    text-align: center;
+                    color: grey;
+                }
+                button{
+                    flex: 0.2;
+                    height: 100%;
+                    font-size: 20px;
+                    cursor: pointer;
+                    background-color: rgb(246 247 249);
+                    border: 0.5px solid gray;
+                    border-radius: 5px;
+                    &:hover{
+                        animation: send 0.3s 1 linear forwards;
+                    }
+                }
+            }
+        }
+    }
+}
+small{
+    font-size: 10px;
+}
+
+@keyframes hov {
+    to {
+        background-color: cornflowerblue;
+        color: white;
+    }
+}
+@keyframes send {
+    to{
+        background-color: rgb(255 150 150);
+        color: white;
+    }
+}
+
+.select {
+    background-color: cornflowerblue;
+    color: white;
+}
+.me{
+    justify-content: right !important;
+    margin-left: 200px !important;
+    text-align: right !important;
+    small{
+        padding-right: 8px;
+    }
+    p{
+        background: linear-gradient(30deg, #fca5f1, #b5ffff) !important;
+        text-align: left;
+    }
+}
+

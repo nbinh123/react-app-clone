@@ -1,0 +1,122 @@
+.container {
+    width: 99%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+
+    .contain {
+        width: 43%;
+        padding: 40px;
+        box-shadow: 1px 2px 8px gray;
+        border-radius: 10px;
+        .input {
+            width: 95%;
+            padding: 10px;
+            outline: none;
+            font-size: 16px;
+            margin: 8px;
+            &:first-child {
+                margin-bottom: 20px;
+            }
+        }
+
+        .btn {
+            display: flex;
+            justify-content: left;
+            margin-left: 12px !important;
+            margin-top: 20px;
+
+            button {
+                background-color: #4eb92d;
+                border: 0;
+                padding: 15px 40px;
+                text-transform: uppercase;
+                color: white;
+                border-radius: 10px;
+                cursor: pointer;
+
+                &:hover {
+                    animation: hov 0.3s 1 linear forwards;
+                }
+
+                @keyframes hov {
+                    to {
+                        background-color: coral;
+                    }
+                }
+            }
+        }
+
+        .problem {
+            text-align: left;
+            margin-left: 12px !important;
+            font-size: 13px;
+            color: coral !important;
+
+            .forget {
+                margin: 15px 0 !important;
+                color: black;
+            }
+        }
+
+        .more {
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-around;
+
+            .fb {
+                flex: 1;
+                padding: 10px 0;
+                margin: 5px;
+                border-radius: 10px;
+                color: white;
+                background-color: #3b5998;
+                cursor: pointer;
+                &:hover{
+                    animation: hov 0.2s linear forwards;
+                }
+            }
+
+            .ggp {
+                flex: 1;
+                padding: 10px 0;
+                margin: 5px;
+                border-radius: 10px;
+                color: white;
+                cursor: pointer;
+                background-color: #dc4e41;
+                &:hover{
+                    animation: hov 0.4s linear forwards;
+                }
+            }
+
+            .zalo {
+                flex: 1;
+                cursor: pointer;
+                padding: 10px 0;
+                margin: 5px;
+                border-radius: 10px;
+                color: white;
+                background-color: #0591e9;
+                cursor: pointer;
+                &:hover{
+                    animation: hov 0.4s linear forwards;
+                }
+            }
+        }
+    }
+}
+.tool{
+    background-color: #3b5998;
+    width: 100%;
+}
+.return{
+    button{
+        background-color: #4eb92d;
+        border: 0.5px solid #4eb92d;
+        padding: 15px;
+        cursor: pointer;
+        border-radius: 5px;
+        color: white;
+    }
+}

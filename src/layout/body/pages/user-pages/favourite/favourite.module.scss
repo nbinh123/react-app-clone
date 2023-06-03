@@ -1,0 +1,10 @@
+.container{
+    display: flex;
+    margin: 0 15px;
+    .user{
+        flex: 1;
+    }
+    .favourite{
+        flex: 3;
+    }
+}

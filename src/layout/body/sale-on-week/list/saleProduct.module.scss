@@ -1,0 +1,33 @@
+.container {
+    color: black;
+    width: 100%;
+    .avatar {
+        img {
+            width: 90%;
+            aspect-ratio: 1;
+        }
+    }
+
+    .info {
+        .icon {
+            font-size: 10px;
+            color: #fc9135;
+            text-align: left;
+            margin-top: 10px !important;
+            margin-left: 30px !important;
+        }
+        .name{
+            color: #41464C;
+            font-weight: bold;
+            text-align: left;
+            margin-left: 30px !important;
+            margin-top: 12px !important;
+        }
+        .price{
+            margin-left: 30px !important;
+            margin-top: 10px !important;
+            color: #4eb92d;
+            text-align: left;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+
+    .title {
+        .fresh {
+            color: #fc9135;
+            text-align: left;
+            font-size: 22px;
+        }
+
+        .new {
+            margin-top: 10px !important;
+            color: #41464c;
+            text-align: left;
+            font-size: 30px;
+            font-weight: bold;
+        }
+    }
+
+    .all {
+        padding: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button {
+            color: #fc9135;
+            border: 0;
+            border: 2px solid #fc9135;
+            background: 0;
+            border-radius: 999px;
+            padding: 12px 30px;
+            font-size: 15px;
+            color: #fc9135;
+            font-weight: bold;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    height: auto;
+    .main{
+        flex: 2;
+
+        .theBiggest{
+            height: 100%;
+            width: 100%;
+            background-color: aquamarine;
+        }
+    }
+    .main2{
+        flex: 1;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main3{
+        flex: 1;
+
+    }
+}

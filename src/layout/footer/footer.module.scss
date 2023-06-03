@@ -1,0 +1,159 @@
+.container {
+    background-color: rgb(246 247 249);
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 50px;
+    padding: 80px 0;
+    .info {
+        flex: 1;
+        margin-left: 10px;
+        color: #696969;
+        text-align: left;
+        margin-left: 15px;
+        .logo {
+            background-image: url("https://demo037130.web30s.vn/datafiles/35781/upload/images/logo.png?t=1663731016");
+            width: 58.6%;
+            height: 58px;
+            margin-bottom: 15px;
+        }
+        .location{
+            margin-left: 15px
+        }
+        .phone{
+            margin-left: 15px;
+            margin: 15px;
+            font-size: 16px !important;
+        }
+        .emailContact{
+            margin-left: 15px;
+        }
+        .workTime{
+            margin: 15px;
+        }
+        .network{
+            display: flex;
+            
+            .networkItem{
+                margin: 5px;
+                line-height: 0;
+                background-color: rgb(234 234 234);
+                padding: 10px;
+                cursor: pointer;
+                border-radius: 7px;
+                &:hover{
+                    background-color: #4eb92d;
+                    color: white;
+                }
+            }
+        }
+    }
+    .help {
+        flex: 1;
+        text-align: left;
+        p{
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-top: 20px !important;
+            font-size: 18px;
+            letter-spacing: 0.6px;
+        }
+        .client{
+            color: #696969;
+            margin: 30px 0;
+        }
+        .more{
+            color: #696969;
+        }
+    }
+
+    .menu {
+        flex: 1;
+        .title{
+            margin: 20px !important;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 20px;
+            text-align: left;
+        }
+        .tool{
+            color: #696969;
+            margin: 10px;
+            text-align: left;
+        }
+    }
+
+    .email {
+        flex: 1;
+        margin-right: 10px;
+        background-color: #eaeaea;
+        display: flex;
+        justify-content: center;
+        text-align: left;
+        border-radius: 13px;
+        .contain{
+            width: 80%;
+            .download{
+                font-weight: bold;
+                margin: 30px 0!important;
+                text-transform: uppercase;
+                font-size: 17px;
+            }
+            .img{
+                display: flex;
+                height: 13%;
+                margin: 30px 0;
+                width: 94%;
+                justify-content: space-around;
+                .ggp{
+                    flex: 1;
+                    background-image: url("https://demo037130.web30s.vn/datafiles/35781/upload/images/icon/g_play.png?t=1663647421");
+                }
+                .apt{
+                    flex: 1;
+                    margin-left: 13px;
+                    background-image: url("https://demo037130.web30s.vn/datafiles/35781/upload/images/icon/app_store.png?t=1663647420");
+                }
+            }
+            .login{
+                font-weight: bold;
+                text-transform: uppercase;
+                font-size: 17px;
+                letter-spacing: 0.5px;
+            }
+            .formEmail{
+                margin-top: 20px;
+                input{
+                    padding: 15px;
+                    border: 0;
+                    border-top-left-radius: 13px;
+                    border-bottom-left-radius: 13px;
+                    font-size: 13px;
+                    outline: none;
+                }
+                button{
+                    background-color: #4eb92d;
+                    padding: 16.5px;
+                    line-height: 0;
+                    border: 0;
+                    color: white;
+                    border-top-right-radius: 13px;
+                    border-bottom-right-radius: 13px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

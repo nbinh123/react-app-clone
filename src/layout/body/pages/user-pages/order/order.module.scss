@@ -1,0 +1,33 @@
+.container{
+    display: flex;
+    margin: 0 15px;
+    .user{
+        flex: 1;
+    }
+    .order{
+        flex: 3;
+        .title{
+            text-align: left;
+            padding: 8px 0;
+            margin: 0 20px !important;
+            color: #383838;
+            font-weight: 600;
+            border-bottom: 1px solid gray;
+        }
+        .listCart{
+            text-align: left;
+            padding: 8px 0;
+            margin: 13px 20px !important;
+            a{
+                margin-left: 10px;
+                color: coral;
+                cursor: pointer;
+                text-decoration: underline !important;
+            }
+            .list{
+                display: flex;
+                margin: 0 20px;
+            }
+        }
+    }
+}

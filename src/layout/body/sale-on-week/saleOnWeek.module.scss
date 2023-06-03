@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    .saleProducts{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .content {
+        color: black;
+        flex: 1;
+        margin-right: 20px;
+        display: flex;
+        justify-content: right;
+        font-weight: bold;
+        .sale1{
+            font-size: 27px;
+            color: #41464c;
+            span{
+                color: #4eb92d;
+                text-decoration: underline;
+                font-weight: 400;
+            }
+        }
+        .more{
+            color: #696969;
+            margin-top: 3px !important;
+           font-size: 14px;
+           font-weight: 100;
+        }
+    }
+
+    .timer {
+        flex: 1;
+        color: black;
+        display: flex;
+    }
+}

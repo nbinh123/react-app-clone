@@ -1,0 +1,92 @@
+.container {
+    border-right: 0.5px solid gray;
+
+    .info {
+        display: flex;
+
+        .img {
+            flex: 1;
+
+            img {
+                aspect-ratio: 1;
+                width: 60px;
+                border: 1px solid gray;
+                border-radius: 50%;
+            }
+        }
+
+        .all {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .name {
+                text-align: left;
+            }
+
+            .editAccount {
+                text-align: left;
+            }
+        }
+    }
+
+    .transaction {
+        .title {
+            width: 100%;
+            background-color: #f6f7f9;
+            padding: 12px 20px;
+            text-align: left;
+            text-transform: uppercase;
+            color: #383838;
+            font-weight: 600;
+        }
+
+        .tag {
+            cursor: pointer;
+            text-align: left;
+            color: #696969;
+
+            &:hover {
+                color: lightgreen;
+            }
+
+            p {
+                padding: 12px 20px;
+
+                .icon {
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+
+    .account {
+        .title {
+            width: 100%;
+            background-color: #f6f7f9;
+            padding: 12px 20px;
+            text-align: left;
+            text-transform: uppercase;
+            color: #383838;
+            font-weight: 600;
+        }
+        .tag {
+            cursor: pointer;
+            text-align: left;
+            color: #696969;
+
+            &:hover {
+                color: lightgreen;
+            }
+
+            p {
+                padding: 12px 20px;
+
+                .icon {
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,146 @@
+{
+  "admin": {
+    "nickname": "admin",
+    "password": "linh"
+  },
+  "users": [
+    {
+      "id": 1,
+      "name": "Binh",
+      "img": "https://pgddttieucan.edu.vn/wp-content/uploads/2022/09/1662947913_266_Bo-suu-tap-54-anh-anime-meo-de-thuong-moi.jpg",
+      "cart": [
+        {
+          "name": "Cá",
+          "quanlity": 4,
+          "price": 12,
+          "total": 48
+        }
+      ],
+      "favourite": [
+        {
+          "name": "Cá",
+          "price": 12,
+          "quanlity": 3,
+          "total": 0
+        },
+        {
+          "name": "Tôm",
+          "price": 15,
+          "quanlity": 2,
+          "total": 0
+        }
+      ]
+    },
+    {
+      "name": "Linh",
+      "cart": [
+        {
+          "name": "Cá",
+          "price": 12,
+          "quanlity": 3,
+          "total": 0
+        },
+        {
+          "name": "Tôm",
+          "price": 15,
+          "quanlity": 2,
+          "total": 0
+        }
+      ],
+      "favourite": [
+        {
+          "name": "Cá",
+          "price": 12,
+          "quanlity": 3,
+          "total": 0
+        },
+        {
+          "name": "Tôm",
+          "price": 15,
+          "quanlity": 2,
+          "total": 0
+        }
+      ],
+      "id": 2
+    }
+  ],
+  "products": [
+    {
+      "name": "Chuối sấy",
+      "img": "https://chungkhoantaichinh.vn/wp-content/uploads/2022/12/hinh-meo-cute-chibi-10.jpg",
+      "status": true,
+      "price": "23.000",
+      "id": 1
+    },
+    {
+      "name": "Khoai lang tím sấy",
+      "img": "https://chungkhoantaichinh.vn/wp-content/uploads/2022/12/hinh-meo-cute-chibi-10.jpg",
+      "status": true,
+      "price": "23.000",
+      "id": 2
+    },
+    {
+      "name": "Dâu tây sấy",
+      "img": "https://chungkhoantaichinh.vn/wp-content/uploads/2022/12/hinh-meo-cute-chibi-10.jpg",
+      "status": true,
+      "price": "23.000",
+      "id": 3
+    },
+    {
+      "name": "Cải bó xôi Ardo 450g",
+      "img": "https://chungkhoantaichinh.vn/wp-content/uploads/2022/12/hinh-meo-cute-chibi-10.jpg",
+      "status": true,
+      "price": "23.000",
+      "id": 4
+    },
+    {
+      "name": "Dưa leo",
+      "img": "https://chungkhoantaichinh.vn/wp-content/uploads/2022/12/hinh-meo-cute-chibi-10.jpg",
+      "status": true,
+      "price": "23.000",
+      "id": 5
+    },
+    {
+      "name": "Bầu",
+      "img": "https://chungkhoantaichinh.vn/wp-content/uploads/2022/12/hinh-meo-cute-chibi-10.jpg",
+      "status": true,
+      "price": "23.000",
+      "id": 6
+    },
+    {
+      "name": "Khoai lang Nhật tím",
+      "img": "https://chungkhoantaichinh.vn/wp-content/uploads/2022/12/hinh-meo-cute-chibi-10.jpg",
+      "status": true,
+      "price": "23.000",
+      "id": 7
+    },
+    {
+      "name": "Cà tím",
+      "img": "https://chungkhoantaichinh.vn/wp-content/uploads/2022/12/hinh-meo-cute-chibi-10.jpg",
+      "status": true,
+      "price": "23.000",
+      "id": 8
+    }
+  ],
+  "tag-products":[
+    {
+        "img": "https://demo037130.web30s.vn/datafiles/35781/upload/images/product/bot-ngu-coc.png?t=1663918940",
+        "content": "bột, ngũ cốc"
+    }, {
+        "img": "https://demo037130.web30s.vn/datafiles/35781/upload/images/product/rau-cu-qua.png?t=1663917902",
+        "content": "rau, củ quả"
+    }, {
+        "img": "https://demo037130.web30s.vn/datafiles/35781/upload/images/product/hai-san.png?t=1663918130",
+        "content": "hải sản"
+    }, {
+        "img": "https://demo037130.web30s.vn/datafiles/35781/upload/images/product/thuc-pham-dong-lanh.png?t=1663918282",
+        "content": "thực phẩm đông lạnh"
+    }, {
+        "img": "https://demo037130.web30s.vn/datafiles/35781/upload/images/product/sushi-sashimi.png?t=1663918713",
+        "content": "sushi & shashimi deli"
+    }, {
+        "img": "https://demo037130.web30s.vn/datafiles/35781/upload/images/product/thit-ca.png?t=1663917720",
+        "content": "thịt - cá"
+    }
+  ]
+}

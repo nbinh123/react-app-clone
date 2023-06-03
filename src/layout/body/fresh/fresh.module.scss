@@ -1,0 +1,58 @@
+.container{
+    margin: 50px 15px;
+    height: 100%;
+    .show{
+        height: 100%;
+        display: flex;
+        .introduce{
+            box-shadow: 1px 0 8px gray;
+            flex: 1.2;
+            height: auto;
+            width: 100%;
+            background-image: url("https://demo037130.web30s.vn/datafiles/35781/upload/images/banner/special_products_add.jpg?t=1663638422");
+            background-size: cover;
+            text-align: left;
+            .title{
+                color: #fc9135 !important;
+                text-transform: uppercase;
+                margin-top: 30px !important;
+                margin-left: 30px !important;
+                margin-bottom: 20px !important;
+                font-weight: bold;
+                font-size: 14px;
+            }
+            .content{
+                color: #41464C;
+                margin-left: 30px !important;
+                margin-right: 30px !important;
+                text-transform: uppercase ;
+                font-weight: bold;
+                letter-spacing: 0px;
+            }
+            .sale{
+                margin-left: 30px !important;
+                margin-top: 15px !important;
+            }
+            .btn{
+                background-color: #4eb92d;
+                color: white;
+                margin-left: 30px;
+                margin-top: 20px;
+                border: 0;
+                padding: 13px 25px;
+                outline: none;
+                border-radius: 99px;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 12px;
+            }
+        }
+        .productsList{
+            box-shadow: 1px 0 8px gray;
+            flex: 4.5;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+    }
+}

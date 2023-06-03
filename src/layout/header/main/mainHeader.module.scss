@@ -1,0 +1,115 @@
+.container {
+    display: flex;
+    min-height: 20vh;
+    margin: 20px 10px;
+    border-bottom: 1px solid black;
+    .category {
+        flex: 1;
+        color: white;
+        font-size: 17px;
+        text-transform: uppercase;
+        .icon{
+            margin-right: 10px;
+        }
+
+        p {
+            display: flex;
+            align-items: center;
+            height: 50%;
+            justify-content: center;
+            background-color: #4eb92d ;
+            font-weight: bold;
+            font-family: 'Open Sans', sans-serif;
+        }
+    }
+
+    .group {
+        flex: 3;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        .child{
+            height: 50%;
+            font-size: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #696969; 
+            cursor: pointer;
+            &:hover{
+                color: #4eb92d !important;
+            }
+            p{
+                padding: 20px 23px;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+            .icon{
+                margin-left: 5px;
+            }
+            
+        }
+    }
+
+    .region {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        color: white;
+        font-size: 14px;
+        .icon{
+            margin-right: 10px;
+        }
+        p{
+            padding: 15px 20px;
+            background-color: #4eb92d;
+            border-radius: 999px;
+        }
+    }
+}
+
+.stage1{
+    box-shadow: 1px 3px 8px lightgreen;
+    background-color: green;
+    color: white;
+    border-radius: 8px;
+    animation: show 0.5s 1 linear forwards;
+    font-size: 14px;
+    position: relative;
+    .stage2{
+        background-color: #00bf41;
+        color: white;
+        border-radius: 8px;
+        animation: show 0.5s 1 linear forwards;
+        position: relative;
+        z-index: 2;
+        .stage3{
+            border-radius: 8px;
+            background-color: #00ff57;
+            color: white;
+            animation: show 0.5s 1 linear forwards;
+            position: relative;
+            z-index: 3;
+        }
+    }
+}
+.childStage{
+    padding: 13px 25px;
+    cursor: pointer;
+    .icon{
+        position: absolute;
+        right: 10px;
+    }
+}
+@keyframes show {
+    from{
+        transform: rotateY(90deg);
+        opacity: 0;
+    }
+    to{
+        transform: rotateY(0deg);
+        opacity: 1;
+    }
+}

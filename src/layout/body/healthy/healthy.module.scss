@@ -1,0 +1,52 @@
+.container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    .banner{
+        width: 32%;
+        aspect-ratio: 1.77973568282;
+        border-radius: 15px;
+        color: white;
+        display: flex;
+        justify-content: right;
+        text-transform: uppercase;
+        font-weight: bold;
+        align-items: center;
+        .info{
+            width: 50%;
+            .text{
+                font-size: 12px;
+                text-align: left;
+                margin-bottom: 18px !important;
+            }
+            .content{
+                font-size: 20px;
+                text-align: left;
+            }
+            .btn{
+                background-color: white;
+                color: #fc9135;
+                display: block;
+                margin-top: 18px;
+                border: 0;
+                padding: 13px 22px;
+                border-radius: 0px;
+                &:hover{
+                    border-radius: 999px;
+                }
+            }
+        }
+        &:nth-child(3){
+            justify-content: left;
+            .info{
+                margin-left: 40px;
+                .text{
+                    color: #696969;
+                }
+                .content{
+                    color: #41464c;
+                }
+            }
+        }
+    }
+}
