@@ -24,8 +24,12 @@ server.listen(2222, () => {
 })
 
 let onlineMembers = []
+let conversation = []
 
 io.on("connection",(socket) => {
+
+    let privateMessages = []
+
     console.log("user connected:  " + socket.id)
     socket.on("disconnect",() => {
         let index = onlineMembers.findIndex((user) => {
@@ -64,9 +68,16 @@ io.on("connection",(socket) => {
         socket.emit("Server-send-id", socket.id)
     })
     socket.on("Client-send-message-all", (data) => {
+        //  trong data sẽ có name và message
+        conversation.push(data)
+        io.sockets.emit("Server-send-message-all", conversation)
+    })
+    socket.on("Client-send-message-private", (data) => {
         //  trong data sẽ có id và message
-        console.log(data)
-        io.sockets.emit("Server-send-message-all", data)
+        //  id dùng để xác nhận người nhận
+        //  io.to("socket.id").emit()
+        privateMessages.push(data)
+        io.to(data.id).emit("Client-send-message-private", privateMessages)
     })
 })
 

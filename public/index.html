@@ -29,6 +29,7 @@
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
+  <canvas class="can"></canvas>
   <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -40,8 +41,110 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   <script>
-    
+    {
+      window.addEventListener("mousemove", function (event) {
+        var x = event.clientX;
+        var y = event.clientY;
+        createHeart(x, y);
+      });
+
+      window.addEventListener("click", function (event) {
+        var x = event.clientX;
+        var y = event.clientY;
+        createHeart(x, y)
+      })
+
+      var canvas1 = document.querySelector('.can');
+      var c = canvas1.getContext('2d');
+
+      canvas1.width = window.innerWidth;
+      canvas1.height = window.innerHeight;
+
+      window.addEventListener('resize', function () {
+        canvas1.width = window.innerWidth;
+        canvas1.height = window.innerHeight;
+        canvas1.width = window.innerWidth;
+        canvas1.height = window.innerHeight;
+        hearts = [];
+        for (var i = 0; i < 50; i++) {
+          var x = Math.random() * canvas1.width;
+          var y = Math.random() * canvas1.height;
+          var size = 30;
+          var speed = Math.random() * 2 + 1;
+          hearts.push(new Heart(x, y, size, speed));
+        }
+      });
+
+      var hearts = [];
+
+      function Heart(x, y, size, speed) {
+        this.x = x;
+        this.y = y;
+        this.size = size;
+        this.speed = speed;
+        this.opacity = 1;
+
+        this.draw = function () {
+          c.beginPath();
+          c.fillStyle = "rgba(255, 43, 47, " + this.opacity + ")";
+          c.moveTo(this.x, this.y);
+          c.bezierCurveTo(this.x - this.size / 2, this.y - this.size / 2, this.x - this.size, this.y + this.size / 2, this.x, this.y + this.size);
+          c.bezierCurveTo(this.x + this.size, this.y + this.size / 2, this.x + this.size / 2, this.y - this.size / 2, this.x, this.y);
+          c.fill();
+        };
+
+        this.update = function () {
+          this.x += this.speed;
+          this.y += this.speed / 2;
+          this.opacity -= 0.02;
+
+          if (this.opacity < 0) {
+            this.opacity = 0;
+          }
+        };
+      }
+
+      function createHeart(x, y) {
+        var size = Math.random() * 20 + 10;
+        var speed = Math.random() * 2 + 1;
+        var heart = new Heart(x, y, size, speed);
+        hearts.push(heart);
+      }
+      function loop() {
+        requestAnimationFrame(loop);
+        c.clearRect(0, 0, canvas1.width, canvas1.height);
+
+        for (var i = 0; i < hearts.length; i++) {
+          hearts[i].draw();
+          hearts[i].update();
+
+          if (hearts[i].y > canvas1.height + hearts[i].size || hearts[i].opacity <= 0) {
+            hearts.splice(i, 1);
+            i--;
+          }
+        }
+      }
+
+      loop();
+    }
   </script>
+  <style>
+    canvas {
+      position: fixed;
+      /* Định vị cố định */
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      /* Phóng to chiều rộng */
+      height: 100%;
+      /* Phóng to chiều cao */
+      z-index: 1;
+      /* Hiển thị với z-index caoất */
+      pointer-events: none
+    }
+  </style>
 </body>
 
 </html>

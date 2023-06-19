@@ -8,7 +8,6 @@ import { faChevronDown, faL, faStar } from "@fortawesome/free-solid-svg-icons";
 function Chat({ socket }) {
 
     const y = useRef(0)
-
     // state quản lí form đăng nhập
     const inpRef = useRef()
     //  state quản lí số người đang online
@@ -32,7 +31,6 @@ function Chat({ socket }) {
             })} onClick={() => {
                 setSelect(true)
                 pickFriendID(id)
-                setFriend(name)
             }}>
                 <p>{name}<span>{icon ? <FontAwesomeIcon className={styles.myIcon} icon={faStar} /> : ""}</span></p>
             </div>
@@ -89,12 +87,20 @@ function Chat({ socket }) {
     }
     function FormChat() {
 
-        const [conversation, setConversation] = useState([])
+        const [conversation, setConversation] = useState([
+            {
+                name: "Admin",
+                message: "Trang này em đang học socket ^^"
+            }
+        ])
         const [message, setMessage] = useState()
         const boardRef = useRef()
         useEffect(() => {
             socket.on("Server-send-message-all", (data) => {
-                setConversation([...conversation, data])
+                setConversation(data)
+            })
+            socket.on("Client-send-message-private", (data) => {
+                setConversation(data)
             })
         },[])
         useEffect(() => {
@@ -110,22 +116,28 @@ function Chat({ socket }) {
             const pickValue = (e) => {
                 if (timer) {
                     clearTimeout(timer)
-                    buttonRef.current.style.pointerEvents = "none"
                 }
                 let newTimer = setTimeout(() => {
                     setInpValue(e.target.value)
-                    buttonRef.current.style.pointerEvents = "auto"
-                }, 300)
+                }, 100)
                 setTimer(newTimer)
             }
             useEffect(() => {
 
             }, [inpValue])
             const sendMessage = () => {
-                socket.emit("Client-send-message-all", {
-                    name: nameSocket,
-                    message: inpValue
-                })
+                if(friend === null){
+                    socket.emit("Client-send-message-all", {
+                        name: nameSocket,
+                        message: inpValue
+                    })
+                }else{
+                    socket.emit("Client-send-message-private",{
+                        id: friend,
+                        name: nameSocket,
+                        message: inpValue
+                    })
+                }
                 inpRef.current.value = ""
             }
             return (

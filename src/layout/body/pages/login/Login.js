@@ -10,22 +10,22 @@ function Login({ toast }) {
 
     const [user, setUser] = useState(false)
     const [pass, setPass] = useState(false)
+    const [nickname, setNickname] = useState("")
+    const [password, setPassword] = useState("")
     const form = useRef({
         user: user,
         pass: pass
     })
 
-    function Input({ placeholder, isTrue, type }) {
-        const [inpValue, setInpValue] = useState("")
-
+    function Input({ placeholder, isTrue, type, defau, subState }) {
         useEffect(() => {
-            if (inpValue.trim() == isTrue) {
-                type(true)
+            if(defau == isTrue){
+                subState(true)
             }
-        }, [inpValue])
+        },defau)
 
         return (
-            <input onChange={(e) => setInpValue(e.target.value)} placeholder={placeholder} className={styles.input}></input>
+            <input onChange={(e) => type(e.target.value)} placeholder={placeholder} className={styles.input}></input>
         )
     }
 
@@ -48,9 +48,9 @@ function Login({ toast }) {
                 (<div className={styles.container}>
                     <div className={styles.contain}>
                         <h1>Đăng nhập</h1>
-                        <Input placeholder={"Tên đăng nhập"} type={setUser} isTrue={"binh"} />
+                        <Input placeholder={"Tên đăng nhập"} type={setNickname} isTrue={"1"} defau={nickname} subState={setUser}/>
                         <br></br>
-                        <Input placeholder={"Mật khẩu"} type={setPass} isTrue={"linh"} />
+                        <Input placeholder={"Mật khẩu"} type={setPassword} isTrue={"1"} defau={password} subState={setPass}/>
                         <br></br>
                         <div className={styles.btn}>
                             <button onClick={check}>Đăng nhập</button>

@@ -46,7 +46,7 @@
     "exp": "nodemon src/express/express.js",
     "socket": "nodemon src/server/server.js",
     "db": "json-server --watch ./src/api/data.json --port 3002",
-    "dev": "concurrently \"npm run start \" \"npm run db \" \"npm run exp \" ",
+    "dev": "concurrently \"npm run start \" \"npm run db \" \"npm run exp \"",
     "devv": "concurrently \"npm run start \" \"npm run socket \""
   },
   "eslintConfig": {

@@ -80,8 +80,10 @@
 
             .board {
                 width: 100%;
-                height: 92%;
+                height: 559px;
                 background-color: white;
+                overflow: auto;
+                // max-height: 92%;
                 .message{
                     margin: 5px ;
                     display: flex;
