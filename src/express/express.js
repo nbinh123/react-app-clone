@@ -1,48 +1,33 @@
 const express = require("express") // dùng thư viện expres
-{
-    // app.use(express.static(path.join(__dirname, "public")))
-    // app.use(methodOverride("_method"))
-    // // đây là bước lưu vào biến body cho req.body trong phương thức post của form
-
-    // app.use(express.urlencoded({
-    //     extended: true,
-    // }
-    // )
-    // );
-    // app.use(express.json());
-    // //nodemon dùng để lắng nghe sự thay đổi file một cách liên tục
-    // //sử dụng morgan
-    // app.use(morgan("combined"))
-
-    // //Template engineer
-    // app.engine('hbs', handlebars.engine({
-    //     extname: '.hbs',
-    //     //partialsDir: path.join(__dirname, "views\\partials")
-    //     helpers: {
-    //         sum: (a, b) => a + b,
-    //         convert: (text) => {
-    //             if (text !== "") {
-    //                 text = "-- " + text + " --"
-    //                 return text
-    //             }else{
-    //                 return text
-    //             }
-    //         },
-    //     }
-    // }))
-    // app.set('view engine', 'hbs')
-    // app.set("views", path.join(__dirname, /* đường dẫn đến file views */ "resources\\views"))
-
-    // // Local ( cục bộ ) host --- thuê hosting ( nơi lưu trữ ) => là 1
-    // // Controller
-}
-const port = 3001
+const port = 5000
 const app = express()
 const path = require("path")
 const methodOverride = require("method-override")
 const cors = require('cors');
 const db = require("./connectDB/db")
 const route = require("./routes/routes")
+
+app.use(express.static(path.join(__dirname, "public")))
+app.use(methodOverride("_method"))
+    // đây là bước lưu vào biến body cho req.body trong phương thức post của form
+
+app.use(express.urlencoded({
+        extended: true,
+    }
+    )
+    );
+    app.use(express.json());
+    //nodemon dùng để lắng nghe sự thay đổi file một cách liên tục
+    //sử dụng morgan
+
+    //Template engineer
+
+app.set('view engine', 'hbs')
+app.set("views", path.join(__dirname, /* đường dẫn đến file views */ "resources\\views"))
+
+    // Local ( cục bộ ) host --- thuê hosting ( nơi lưu trữ ) => là 1
+    // Controller
+
 
 
 db.connect()

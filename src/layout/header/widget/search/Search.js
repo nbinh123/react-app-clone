@@ -33,7 +33,7 @@ function Search() {
     }
 
     const get = () => {
-        axios.get("http://localhost:3001/products/api/find", {
+        axios.get("http://localhost:5000/products/api/find", {
             params: {
                 name: inpValue,
                 type: "less"
@@ -44,6 +44,7 @@ function Search() {
         })
             .then(response => {
                 setSearchValue(response.data)
+                console.log(response.data)
                 // console.log(response.data)
                 return response.data
             })

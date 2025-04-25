@@ -1,7 +1,7 @@
 import React, { Children, useEffect, useState } from "react";
 import styles from "../../main/mainHeader.module.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDown, faChevronUp, faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { faChevronDown, faChevronUp, faChevronRight, faL } from "@fortawesome/free-solid-svg-icons";
 
 import Tippy from "@tippyjs/react/headless"
 import { Link } from "react-router-dom";

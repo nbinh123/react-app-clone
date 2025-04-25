@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import styles from "./signIn.module.scss"
 import { useRef, useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck, faX, faSpinner, faBreadSlice } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import clsx from "clsx"
+import { GlobalContext } from "../../../../globalContext/GlobalContext";
 
-function LoginInput({ placeholder, trueAnswer = [], autoTrue, checkTrue, checkFalse, mode, setString, rule, type }) {
+function LoginInput({ placeholder, trueAnswer = [], autoTrue, checkTrue, checkFalse, mode = "main", setString = () => {}, rule, type }) {
 
     const inputRef = useRef()
     const [isTrue, setIsTrue] = useState(false)
@@ -89,6 +90,9 @@ function LoginInput({ placeholder, trueAnswer = [], autoTrue, checkTrue, checkFa
 
 function SignIn() {
 
+    const navigate = useNavigate()
+
+    const { newAxios } = useContext(GlobalContext)
     const [name, setName] = useState("")
     const [phone, setPhone] = useState("")
     const [location, setLocation] = useState("")
@@ -98,6 +102,13 @@ function SignIn() {
     const [submitPass, setSubmitPass] = useState(false)
     const [securityCode, setSecurityCode] = useState(false)
 
+    const onSignIn = async () => {
+        const res = await newAxios.post(5000, "/user/sign_in" , null, {
+            username: nickname,
+            password: password
+        })
+        if(res?.status === 200) navigate("/")     
+    }
     return (
         <div className={styles.container}>
 
@@ -117,6 +128,7 @@ function SignIn() {
                         checkTrue={() => { }}
                         placeholder={"Tên truy cập"}
                         autoTrue={true}
+                        setString={setNickname}
                     />
                     <LoginInput
                         checkFalse={() => { }}
@@ -129,6 +141,7 @@ function SignIn() {
                         checkTrue={() => { }}
                         placeholder={"Mật khẩu"}
                         autoTrue={true}
+                        setString={setPassword}
                     />
                     <LoginInput
                         checkFalse={() => { }}
@@ -157,7 +170,7 @@ function SignIn() {
                 <div className={styles.more}>
                     <p>Bạn đã có tài khoản? <Link to={"/login"}>Đăng nhập</Link></p>
                     <div className={styles.tools}>
-                        <button className={styles.submit}>Đăng kí</button>
+                        <button onClick={onSignIn} className={styles.submit}>Đăng kí</button>
                         <button className={styles.rewrite}>Làm lại</button>
                     </div>
                 </div>

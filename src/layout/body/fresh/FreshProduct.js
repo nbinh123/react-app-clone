@@ -1,14 +1,16 @@
-import React, { useEffect, useRef, useState } from "react"
+import React, { useContext, useEffect, useRef, useState } from "react"
 import styles from "./fresh.module.scss"
 
 import BannerFresh from "./banner/BannerFresh";
 import TagFresh from "./list/TagFresh";
 
 import getAPI from "../../../server/axios/getAPI";
+import { GlobalContext } from "../../../globalContext/GlobalContext";
 
 function FreshProduct() {
 
     const [productsList, setProductsList] = useState([])
+    const { newAxios } = useContext(GlobalContext) 
 
     useEffect(() => {
         getAPI("/products", "", {}, setProductsList)

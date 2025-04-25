@@ -2,7 +2,7 @@ import axios from "axios"
 
 function getAPI(url, id, paramCondition, setState) {
 
-    axios.get(`http://localhost:3002${url}/${id}`, {
+    axios.get(`http://localhost:8888${url}/${id}`, {
         params: paramCondition,
         headers: {
             'Content-Type': 'application/json',

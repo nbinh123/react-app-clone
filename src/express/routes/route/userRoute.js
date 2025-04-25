@@ -5,9 +5,10 @@
 const express = require("express")
 const router = express.Router()
 // nạp file HomeController
-const ProductController = require("../../controllers/ProductController")
-router.use('/api/find', ProductController.find)
-router.use('/api/get', ProductController.index)
-router.use('/api/add', ProductController.add)
-router.use('/api/test', ProductController.testing)
+const UserController = require("../../controllers/UserController")
+
+router.get('/get_information/:userID', UserController.getInformation)
+
+router.post('/sign_in', UserController.sign_in)
+router.post('/login', UserController.login)
 module.exports = router

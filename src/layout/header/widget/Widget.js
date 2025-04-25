@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import styles from "./widget.module.scss"
 import { faCartShopping, faMagnifyingGlass, faPhone, faUser, faX } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -6,15 +6,15 @@ import { Link } from "react-router-dom"
 import Search from "./search/Search";
 
 import Tippy from '@tippyjs/react/headless'
+import { GlobalContext } from "../../../globalContext/GlobalContext";
 
-function Widget({ toast }) {
+function Widget() {
 
-    const [change, setChange] = useState(false)
+    const { userID } = useContext(GlobalContext)
 
     const logout = () => {
         localStorage.removeItem("accessToken")
-        toast("success", "Đăng xuất tài khoản thành công!!!")
-        setChange(!change)
+        window.location.reload()
     }
 
     return (
