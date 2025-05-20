@@ -4,6 +4,7 @@ import { faStar } from "@fortawesome/free-solid-svg-icons"
 import styles from "./showProduct.module.scss"
 
 import TagProduct from "./tag/TagProduct";
+import getAPI from "../../../../server/axios/getAPI";
 
 function Extra() {
     function Menu() {
@@ -56,17 +57,17 @@ function Extra() {
             name: "Chuối sấy",
             price: "50.000đ",
             defaultPrice: "75.000đ",
-            img: "https://pgddttieucan.edu.vn/wp-content/uploads/2022/09/BST-38-anh-anime-meo-cute-chibi-moinhat-thang-9.jpg"
+            img: "https://tse1.explicit.bing.net/th/id/OIP.FJdT3ZB1xZ0gZWz404U4gwHaEy?rs=1&pid=ImgDetMain"
         }, {
             name: "Khoai lang sấy",
             price: "50.000đ",
             defaultPrice: "75.000đ",
-            img: "https://pgddttieucan.edu.vn/wp-content/uploads/2022/09/BST-38-anh-anime-meo-cute-chibi-moinhat-thang-9.jpg"
+            img: "https://i0.wp.com/gocbansi.com/wp-content/uploads/2022/03/IMG_20210824_133838.jpg?fit=1152%2C1152&ssl=1"
         }, {
             name: "Dâu tây sấy",
             price: "50.000đ",
             defaultPrice: "75.000đ",
-            img: "https://pgddttieucan.edu.vn/wp-content/uploads/2022/09/BST-38-anh-anime-meo-cute-chibi-moinhat-thang-9.jpg"
+            img: "https://tse1.mm.bing.net/th/id/OIP.BlZrLI6WtGj9JfT6LjYiuwHaHa?rs=1&pid=ImgDetMain"
         }
     ])
     const [product, setProduct] = useState([])
@@ -194,8 +195,7 @@ function Main() {
                 price: 111,
                 img: "https://qpet.vn/wp-content/uploads/2023/04/meo-chibi-map.jpeg",
                 status: true
-            },
-            {
+            },{
                 name: "san pham",
                 price: 111,
                 img: "https://qpet.vn/wp-content/uploads/2023/04/meo-chibi-map.jpeg",
@@ -217,9 +217,10 @@ function Main() {
                 status: true
             },
         ])
+
         const [product, setProduct] = useState([])
         useEffect(() => {
-            setProduct(data.current)
+            getAPI("/showing", "", {}, setProduct)
         }, [])
 
         return (

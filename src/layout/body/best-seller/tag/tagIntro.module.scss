@@ -1,4 +1,4 @@
-.container{
+.container {
     width: 48.3%;
     height: 300px;
     background-size: cover;
@@ -7,16 +7,19 @@
     display: flex;
     justify-content: left;
     align-items: center;
-    .content{
+
+    .content {
         width: 60%;
-        .title{
+
+        .title {
             color: #696969;
             font-weight: bold;
             text-transform: uppercase;
             margin: 0 50px !important;
             text-align: left;
         }
-        .text{
+
+        .text {
             color: #41464C;
             font-weight: bold;
             text-transform: uppercase;
@@ -24,27 +27,29 @@
             text-align: left;
             font-size: 23px;
         }
-        .sale{
+
+        .sale {
             color: #696969;
             text-align: left;
             margin: 0 50px !important;
         }
-        .btn{
-            button{
-                color: #fc9135;
-                text-align: left;
-                padding: 15px 23px;
-                background-color: white;
-                border: 0;
-                font-weight: bold;
-                text-transform: uppercase;
-                border-radius: 999px;
-                font-size: 12px;
-            }
+
+        .btn {
             margin-left: 50px;
             display: flex;
             justify-content: left;
             margin-top: 15px;
+        }
+
+
+        button {
+            color: #fc9135;
+            text-align: left;
+            border: 0;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 999px;
+            font-size: 12px;
         }
     }
 }

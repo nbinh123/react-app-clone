@@ -82,7 +82,9 @@ function Widget() {
                     </div>
                 </Tippy>
                 <div className={styles.cart}>
-                    <FontAwesomeIcon className={styles.icon} icon={faCartShopping} />
+                    <Link to={"/user/manage/order"}>
+                        <FontAwesomeIcon className={styles.icon} icon={faCartShopping} />
+                    </Link>
                 </div>
             </div>
         </div>

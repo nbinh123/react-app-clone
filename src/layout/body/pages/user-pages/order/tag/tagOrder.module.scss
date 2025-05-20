@@ -1,7 +1,7 @@
 .container {
     width: 25%;
     text-align: left;
-    margin: 0 10px;
+    margin: 10px;
     .avatar {
         width: 100%;
         cursor: pointer;
@@ -61,29 +61,15 @@
             padding: 12px 0;
             height: auto;
 
-            .btn {
-                background-color: #eaeaea;
-                border: 0;
-                aspect-ratio: 1;
-                width: 15%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-right: 15px;
-                border-radius: 50%;
-                padding: 5px;
-
-                button {
-                    border: 0;
-                    border-radius: 50%;
-                    background-color: white;
-                    aspect-ratio: 1;
-                    color: #fc9135;
+            .btn{
+                width: 80%;
+                button{
+                    width: 100%;
+                    background: transparent;
+                    outline: none;
                     cursor: pointer;
-
-                    &:hover {
-                        animation: up 0.2s 1 linear forwards;
-                    }
+                    padding: 0.25rem 0;
+                    background: 1px solid black;
                 }
             }
 
@@ -133,6 +119,10 @@
                 cursor: pointer;
             }
         }
+    }
+    img{
+        width: 100%;
+        aspect-ratio: 1;
     }
 }
 

@@ -1,5 +1,5 @@
 .container {
-    width: 24%;
+    width: 30%;
     margin: 4px;
     .avatar {
         width: 100%;
@@ -95,14 +95,12 @@
                 justify-content: center;
                 align-items: center;
                 margin: 0;
-                width: 22%;
+                width: 30%;
                 aspect-ratio: 1;
-                border: 1px solid black;
                 padding: 3px;
                 font-size: 17px;
                 border-radius: 50%;
-                background-color: white;
-                transform: translateX(26.5px);
+                transform: translateX(35.5px);
                 cursor: pointer;
             }
 
@@ -112,14 +110,12 @@
                 justify-content: center;
                 align-items: center;
                 margin: 0;
-                width: 22%;
+                width: 30%;
                 aspect-ratio: 1;
-                border: 1px solid black;
                 padding: 3px;
                 font-size: 17px;
                 border-radius: 50%;
-                background-color: white;
-                transform: translateX(-26.5px);
+                transform: translateX(-35.5px);
                 cursor: pointer;
             }
         }

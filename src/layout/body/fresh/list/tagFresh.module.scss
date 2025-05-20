@@ -7,6 +7,7 @@
         img {
             width: 100%;
             aspect-ratio: 1;
+            
         }
     }
 
@@ -53,21 +54,19 @@
             height: auto;
 
             .btn {
-                background-color: #eaeaea;
                 border: 0;
                 aspect-ratio: 1;
-                width: 15%;
+                width: 25%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 margin-right: 15px;
                 border-radius: 50%;
-                padding: 5px;
 
                 button {
+                    width: 100%;
                     border: 0;
                     border-radius: 50%;
-                    background-color: white;
                     aspect-ratio: 1;
                     color: #fc9135;
                     cursor: pointer;
@@ -91,35 +90,31 @@
             }
 
             .minus {
-                color: #fc9135;
+                
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 margin: 0;
                 width: 13%;
                 aspect-ratio: 1;
-                border: 1px solid black;
                 padding: 3px;
                 font-size: 17px;
                 border-radius: 50%;
-                background-color: white;
                 transform: translateX(36.5px);
                 cursor: pointer;
             }
 
             .plus {
-                color: #fc9135;
+                
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 margin: 0;
                 width: 13%;
                 aspect-ratio: 1;
-                border: 1px solid black;
                 padding: 3px;
                 font-size: 17px;
                 border-radius: 50%;
-                background-color: white;
                 transform: translateX(-36.5px);
                 cursor: pointer;
             }

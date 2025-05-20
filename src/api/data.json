@@ -67,80 +67,262 @@
   "products": [
     {
       "name": "Chuối sấy",
-      "img": "https://chungkhoantaichinh.vn/wp-content/uploads/2022/12/hinh-meo-cute-chibi-10.jpg",
+      "img": "https://tse1.explicit.bing.net/th/id/OIP.FJdT3ZB1xZ0gZWz404U4gwHaEy?rs=1&pid=ImgDetMain",
       "status": true,
       "price": "23.000",
       "id": 1
     },
     {
       "name": "Khoai lang tím sấy",
-      "img": "https://chungkhoantaichinh.vn/wp-content/uploads/2022/12/hinh-meo-cute-chibi-10.jpg",
+      "img": "https://i0.wp.com/gocbansi.com/wp-content/uploads/2022/03/IMG_20210824_133838.jpg?fit=1152%2C1152&ssl=1",
       "status": true,
       "price": "23.000",
       "id": 2
     },
     {
       "name": "Dâu tây sấy",
-      "img": "https://chungkhoantaichinh.vn/wp-content/uploads/2022/12/hinh-meo-cute-chibi-10.jpg",
+      "img": "https://tse1.mm.bing.net/th/id/OIP.BlZrLI6WtGj9JfT6LjYiuwHaHa?rs=1&pid=ImgDetMain",
       "status": true,
       "price": "23.000",
       "id": 3
     },
     {
       "name": "Cải bó xôi Ardo 450g",
-      "img": "https://chungkhoantaichinh.vn/wp-content/uploads/2022/12/hinh-meo-cute-chibi-10.jpg",
+      "img": "https://nongsanbaophuong.com/wp-content/uploads/2020/11/cay-cai-bo-xoi.jpg",
       "status": true,
       "price": "23.000",
       "id": 4
     },
     {
       "name": "Dưa leo",
-      "img": "https://chungkhoantaichinh.vn/wp-content/uploads/2022/12/hinh-meo-cute-chibi-10.jpg",
+      "img": "https://th.bing.com/th/id/R.4c90d29049946a0b0c344bb5e0b39b67?rik=GnCYXu%2bH9Zageg&pid=ImgRaw&r=0",
       "status": true,
       "price": "23.000",
       "id": 5
     },
     {
       "name": "Bầu",
-      "img": "https://chungkhoantaichinh.vn/wp-content/uploads/2022/12/hinh-meo-cute-chibi-10.jpg",
+      "img": "https://tse1.mm.bing.net/th/id/OIP.eKS1t9PaeG0aK2edLNfhlQHaHa?rs=1&pid=ImgDetMain",
       "status": true,
       "price": "23.000",
       "id": 6
     },
     {
       "name": "Khoai lang Nhật tím",
-      "img": "https://chungkhoantaichinh.vn/wp-content/uploads/2022/12/hinh-meo-cute-chibi-10.jpg",
+      "img": "https://barona.vn/storage/meo-vat/85/khoai-lang-tim.jpg",
       "status": true,
       "price": "23.000",
       "id": 7
     },
     {
       "name": "Cà tím",
-      "img": "https://chungkhoantaichinh.vn/wp-content/uploads/2022/12/hinh-meo-cute-chibi-10.jpg",
+      "img": "https://thucphamdongxanh.com/wp-content/uploads/2019/09/ca-tim-ngon.jpg",
       "status": true,
       "price": "23.000",
       "id": 8
     }
   ],
-  "tag-products":[
+  "showing": [
     {
-        "img": "https://demo037130.web30s.vn/datafiles/35781/upload/images/product/bot-ngu-coc.png?t=1663918940",
-        "content": "bột, ngũ cốc"
-    }, {
-        "img": "https://demo037130.web30s.vn/datafiles/35781/upload/images/product/rau-cu-qua.png?t=1663917902",
-        "content": "rau, củ quả"
-    }, {
-        "img": "https://demo037130.web30s.vn/datafiles/35781/upload/images/product/hai-san.png?t=1663918130",
-        "content": "hải sản"
-    }, {
-        "img": "https://demo037130.web30s.vn/datafiles/35781/upload/images/product/thuc-pham-dong-lanh.png?t=1663918282",
-        "content": "thực phẩm đông lạnh"
-    }, {
-        "img": "https://demo037130.web30s.vn/datafiles/35781/upload/images/product/sushi-sashimi.png?t=1663918713",
-        "content": "sushi & shashimi deli"
-    }, {
-        "img": "https://demo037130.web30s.vn/datafiles/35781/upload/images/product/thit-ca.png?t=1663917720",
-        "content": "thịt - cá"
+      "name": "Chuối sấy",
+      "img": "https://tse1.explicit.bing.net/th/id/OIP.FJdT3ZB1xZ0gZWz404U4gwHaEy?rs=1&pid=ImgDetMain",
+      "status": true,
+      "price": "23.000",
+      "id": 1
+    },
+    {
+      "name": "Khoai lang tím sấy",
+      "img": "https://i0.wp.com/gocbansi.com/wp-content/uploads/2022/03/IMG_20210824_133838.jpg?fit=1152%2C1152&ssl=1",
+      "status": true,
+      "price": "23.000",
+      "id": 2
+    },
+    {
+      "name": "Dâu tây sấy",
+      "img": "https://tse1.mm.bing.net/th/id/OIP.BlZrLI6WtGj9JfT6LjYiuwHaHa?rs=1&pid=ImgDetMain",
+      "status": true,
+      "price": "23.000",
+      "id": 3
+    },
+    {
+      "name": "Cải bó xôi Ardo 450g",
+      "img": "https://nongsanbaophuong.com/wp-content/uploads/2020/11/cay-cai-bo-xoi.jpg",
+      "status": true,
+      "price": "23.000",
+      "id": 4
+    },
+    {
+      "name": "Dưa leo",
+      "img": "https://th.bing.com/th/id/R.4c90d29049946a0b0c344bb5e0b39b67?rik=GnCYXu%2bH9Zageg&pid=ImgRaw&r=0",
+      "status": true,
+      "price": "23.000",
+      "id": 5
+    },
+    {
+      "name": "Bầu",
+      "img": "https://tse1.mm.bing.net/th/id/OIP.eKS1t9PaeG0aK2edLNfhlQHaHa?rs=1&pid=ImgDetMain",
+      "status": true,
+      "price": "23.000",
+      "id": 6
+    },
+    {
+      "name": "Khoai lang Nhật tím",
+      "img": "https://barona.vn/storage/meo-vat/85/khoai-lang-tim.jpg",
+      "status": true,
+      "price": "23.000",
+      "id": 7
+    },
+    {
+      "name": "Cà tím",
+      "img": "https://thucphamdongxanh.com/wp-content/uploads/2019/09/ca-tim-ngon.jpg",
+      "status": true,
+      "price": "23.000",
+      "id": 8
+    },
+    {
+      "name": "Mít sấy",
+      "img": "https://cdn.tgdd.vn/2021/06/CookProduct/mit-say-1200x676.jpg",
+      "status": true,
+      "price": "23.000",
+      "id": 9
+    },
+    {
+      "name": "Me khô",
+      "img": "https://nongsandungha.com/wp-content/uploads/2021/04/me-kho.jpg",
+      "status": true,
+      "price": "23.000",
+      "id": 10
+    },
+    {
+      "name": "Xoài sấy",
+      "img": "https://vinmec-prod.s3.amazonaws.com/images/20200715_141240_830918_xoai-say.max-1800x1800.jpg",
+      "status": true,
+      "price": "23.000",
+      "id": 11
+    },
+    {
+      "name": "Rau muống",
+      "img": "https://thucphamhuunghi.com/wp-content/uploads/2020/11/rau-muong-1.jpg",
+      "status": true,
+      "price": "23.000",
+      "id": 12
+    },
+    {
+      "name": "Đậu bắp",
+      "img": "https://th.bing.com/th/id/OIP.fF-d9U_EaTz8dnvwN4mS5AHaE7?rs=1&pid=ImgDetMain",
+      "status": true,
+      "price": "23.000",
+      "id": 13
+    },
+    {
+      "name": "Rau cải ngọt",
+      "img": "https://vietgro.com/wp-content/uploads/2020/09/cai-ngot-1.jpg",
+      "status": true,
+      "price": "23.000",
+      "id": 14
+    },
+    {
+      "name": "Ớt chuông đỏ",
+      "img": "https://product.hstatic.net/200000492499/product/ot-chuong-do_1f3d5f583e0c4c48a0622c41328b401d.jpg",
+      "status": true,
+      "price": "23.000",
+      "id": 15
+    },
+    {
+      "name": "Ớt chuông xanh",
+      "img": "https://vinmec-prod.s3.amazonaws.com/images/20200507_091152_051073_ot-chuong-xanh.max-800x800.jpg",
+      "status": true,
+      "price": "23.000",
+      "id": 16
+    },
+    {
+      "name": "Hành lá",
+      "img": "https://cdn.tgdd.vn/2021/01/CookProduct/hanhla-1200x676.jpg",
+      "status": true,
+      "price": "23.000",
+      "id": 17
+    },
+    {
+      "name": "Rau dền",
+      "img": "https://th.bing.com/th/id/OIP.XTqT4QqogSUZZt0kV7-u_wHaFj?rs=1&pid=ImgDetMain",
+      "status": true,
+      "price": "23.000",
+      "id": 18
+    },
+    {
+      "name": "Nấm bào ngư",
+      "img": "https://cdn.tgdd.vn/2021/07/CookProduct/nambao-ngu-1200x676.jpg",
+      "status": true,
+      "price": "23.000",
+      "id": 19
+    },
+    {
+      "name": "Nấm kim châm",
+      "img": "https://th.bing.com/th/id/OIP.M0O1mv9Dw_dAxQ7q7tn8zwHaE8?rs=1&pid=ImgDetMain",
+      "status": true,
+      "price": "23.000",
+      "id": 20
+    },
+    {
+      "name": "Nấm rơm",
+      "img": "https://namtunglam.com/wp-content/uploads/2021/03/nam-rom-tuoi.jpg",
+      "status": true,
+      "price": "23.000",
+      "id": 21
+    },
+    {
+      "name": "Cà rốt",
+      "img": "https://vinmec-prod.s3.amazonaws.com/images/20200715_142224_208648_ca-rot.max-800x800.jpg",
+      "status": true,
+      "price": "23.000",
+      "id": 22
+    },
+    {
+      "name": "Củ cải trắng",
+      "img": "https://cdn.tgdd.vn/2020/11/CookProduct/cu-cai-trang-1200x676.jpg",
+      "status": true,
+      "price": "23.000",
+      "id": 23
+    },
+    {
+      "name": "Củ dền",
+      "img": "https://www.organica.vn/Data/Sites/1/Product/1428/cu-den-organic-organica-1.jpg",
+      "status": true,
+      "price": "23.000",
+      "id": 24
+    },
+    {
+      "name": "Su su",
+      "img": "https://product.hstatic.net/1000229182/product/susu_1d2998c9d44b41f297449b0c4d51f186.jpg",
+      "status": true,
+      "price": "23.000",
+      "id": 25
+    }
+  ],
+  "tag-products": [
+    {
+      "img": "https://demo037130.web30s.vn/datafiles/35781/upload/images/product/bot-ngu-coc.png?t=1663918940",
+      "content": "bột, ngũ cốc"
+    },
+    {
+      "img": "https://demo037130.web30s.vn/datafiles/35781/upload/images/product/rau-cu-qua.png?t=1663917902",
+      "content": "rau, củ quả"
+    },
+    {
+      "img": "https://demo037130.web30s.vn/datafiles/35781/upload/images/product/hai-san.png?t=1663918130",
+      "content": "hải sản"
+    },
+    {
+      "img": "https://demo037130.web30s.vn/datafiles/35781/upload/images/product/thuc-pham-dong-lanh.png?t=1663918282",
+      "content": "thực phẩm đông lạnh"
+    },
+    {
+      "img": "https://demo037130.web30s.vn/datafiles/35781/upload/images/product/sushi-sashimi.png?t=1663918713",
+      "content": "sushi & shashimi deli"
+    },
+    {
+      "img": "https://demo037130.web30s.vn/datafiles/35781/upload/images/product/thit-ca.png?t=1663917720",
+      "content": "thịt - cá"
     }
   ]
 }
